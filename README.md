@@ -1,5 +1,9 @@
 # OIBSIP-Web-Devolopment-and-Design-Task1
 HTML,CSS
+ Domain: Web Devolopment &Designing
+📌Task Title: LANDING PAGE
+ 📌Technology Used: HTML &CSS
+📌 Description:
 PURPOSE:- Creating a landing page which is media friendly by using HTML &CSS.
 
 LANDING PAGE Devolopment(input->Output with Media)
