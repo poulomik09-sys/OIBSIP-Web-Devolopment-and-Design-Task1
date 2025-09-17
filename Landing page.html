@@ -1,0 +1,155 @@
+
+<!doctype html>
+<html>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+     <head>
+          <title> Landing Page </title>
+          <style type="text/css">
+               *{padding: 0; margin: 0;box-sizing:border-box; font-family: Arial,sans-serif;}
+               body{
+                    background:linear-gradient(45deg,to right,#ca9b4b);
+                   background-color:#faebd7;
+               }
+               header{
+                    display:flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 10px;
+                    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+                    background-color: #fff;
+               }
+               .logo{
+                    font-size:20px;
+                    font-weight: bold;
+                    color:green;
+                   
+               }
+               .menu{
+                    font-size: 16px;
+                    display: flex;
+                    color: #06283D;
+                    gap:25px;
+               }
+               .menu a{
+                    text-decoration:underline;
+                    text-decoration-thickness: 4px;
+                    font-weight: bold;
+               }
+               .menu a:hover{
+                    font-style: oblique;
+               }
+               nav{
+                    width: 100%;
+                    height: 100px;
+                    justify-content:space-around;
+                    align-items: center;
+                    display: flex;
+               }
+               .hero{
+                    display:flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 50px 80px;
+               }
+               .hero-text{
+                    order: 1;
+               }
+               .hero-img{
+                    order: 2;
+                    max-width:55%;
+               }
+               .hero-img img{
+                   max-width:600px;
+                   border-radius: 400px;
+                   box-shadow: 0px 4px 8px rgba(231, 195, 16, 0.685);
+                   animation:fadeZoom 10s ease-in-out forwards;
+               }
+               @keyframes fadeZoom {
+                    0%{
+                         opacity: 0;
+                         transform: scale(0.8);
+                    }
+                    100%{
+                         opacity: 1;
+                         transform: scale(1);
+                    }
+               }
+               .hero-text h2{
+                    font-size: 30px;
+                    background: linear-gradient(90deg,#2c6404,#409091,#07055a);
+                    -webkit-background-clip:text;
+                    -webkit-text-fill-color: transparent;
+                    background-size: 200%;
+                    animation: gradientMove 5s linear infinite;
+               }
+               @keyframes gradientMove{
+                    0%{background-position: 0% 50%;}
+                    100%{background-position: 100% 50%;}
+               }
+               .hero-text h1{
+                    font-size: 40px;
+                    color: #1a1aec98;
+                    white-space: nowrap;
+                    overflow:hidden;
+                    width: 0;
+                    animation: typing 3s steps(25) forwards,blink 0.7s step-end infinite;
+               }
+               @keyframes typing{
+                    from{width: 0;}
+                    to{width: 100%;}
+               }
+               .hero-text p{
+                    font-size: 25px;
+                    margin-bottom: 20px;
+                    line-height: 1.5;
+                    color:#d87093;
+                    font-style: italic;
+                    animation: typing 3s steps(25) forwards,blink 0.7s step-end infinite;
+               }
+               @keyframes typing{
+                    from{width: 0;}
+                    to{width: 100%;}
+               }
+               .btn{
+                    display: inline-block;
+                    padding: 10px 20px;
+                    background: #003366;
+                    font-weight: bold;
+                    color: #fff;
+               }
+               .btn:hover{
+                    background: #001a33;
+               }
+              u{
+               text-decoration-thickness: 4px;
+              }
+          </style>
+     </head>
+     <body>
+          <header>
+               <nav>
+                    <div class="logo">LOGO</div>
+                     <div class="menu">
+                          <a href="#" >HOME </a>
+                          <a href="#">ABOUT US</a> 
+                          <a href="#" >CONTACT US</a> 
+                         <a href="#" >CONTENT</a> 
+                     </div>
+               </nav>
+          </header>
+          <section class="hero">
+               <div class="hero-text">
+                    <h2> WEB</h2>
+                    <h1> DESIGN & <br> DEVOLOPMENT </h1>
+                         <br><br><br><br><br>
+                    <p><u>Lorem ipsum </u></p>
+                    <p>Lorem ipsum dolor sit amet ,consectetuer,adipiscing elit,sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <a href="#" class="btn">READ MORE</a>
+               </div>
+               <div class="hero-img">
+                    <img src="2e319fb0-ffb4-42e7-9259-55bd16945f7d.png">
+               </div>
+          </section>
+     </body>
+</html>
